@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gedikpascha — Client dashboard</title>
+  <meta name="description" content="Client review of the Gedikpascha idea, logo directions, landing structure, and brief colors.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='6' r='3.2' fill='%23141414'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23D30818'/%3E%3Ccircle cx='16' cy='26' r='3.2' fill='%23178A45'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <svg class="sprite" width="0" height="0" aria-hidden="true">
+    <symbol id="logo-signal" viewBox="0 0 440 120">
+      <circle cx="36" cy="36" r="7" fill="var(--ink)"/>
+      <circle cx="36" cy="60" r="7" fill="var(--red)"/>
+      <circle cx="36" cy="84" r="7" fill="var(--green)"/>
+      <text x="64" y="58" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="42" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+    </symbol>
+    <symbol id="mark-signal" viewBox="0 0 48 96">
+      <circle cx="24" cy="20" r="7" fill="var(--ink)"/>
+      <circle cx="24" cy="48" r="7" fill="var(--red)"/>
+      <circle cx="24" cy="76" r="7" fill="var(--green)"/>
+    </symbol>
+
+    <symbol id="logo-ledger" viewBox="0 0 490 120">
+      <line x1="32" y1="28" x2="32" y2="92" stroke="var(--ink)" stroke-width="1.25"/>
+      <circle cx="32" cy="36" r="5.5" fill="var(--ink)"/>
+      <circle cx="32" cy="60" r="5.5" fill="var(--red)"/>
+      <circle cx="32" cy="84" r="5.5" fill="var(--green)"/>
+      <text x="56" y="62" fill="var(--ink)" font-family="Fraunces, Palatino Linotype, serif" font-size="40" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+    </symbol>
+    <symbol id="mark-ledger" viewBox="0 0 48 100">
+      <line x1="24" y1="12" x2="24" y2="88" stroke="var(--ink)" stroke-width="1.25"/>
+      <circle cx="24" cy="20" r="5.5" fill="var(--ink)"/>
+      <circle cx="24" cy="50" r="5.5" fill="var(--red)"/>
+      <circle cx="24" cy="80" r="5.5" fill="var(--green)"/>
+    </symbol>
+
+    <symbol id="logo-tile" viewBox="0 0 500 120">
+      <rect x="14" y="16" width="88" height="88" rx="22" fill="none" stroke="var(--ink)" stroke-width="2.25"/>
+      <circle cx="58" cy="42" r="6.5" fill="var(--ink)"/>
+      <circle cx="58" cy="60" r="6.5" fill="var(--red)"/>
+      <circle cx="58" cy="78" r="6.5" fill="var(--green)"/>
+      <text x="122" y="60" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="40" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+    </symbol>
+    <symbol id="mark-tile" viewBox="0 0 88 88">
+      <rect x="3" y="3" width="82" height="82" rx="20" fill="none" stroke="var(--ink)" stroke-width="2.25"/>
+      <circle cx="44" cy="28" r="6.5" fill="var(--ink)"/>
+      <circle cx="44" cy="44" r="6.5" fill="var(--red)"/>
+      <circle cx="44" cy="60" r="6.5" fill="var(--green)"/>
+    </symbol>
+
+    <symbol id="logo-notch" viewBox="0 0 520 120">
+      <text x="4" y="88" fill="var(--ink)" font-family="Fraunces, Palatino Linotype, serif" font-size="86" font-weight="560">G</text>
+      <text x="100" y="78" fill="var(--ink)" font-family="Fraunces, Palatino Linotype, serif" font-size="36" font-weight="500">Gedikpascha</text>
+    </symbol>
+    <symbol id="mark-notch" viewBox="0 0 78 100">
+      <text x="2" y="82" fill="var(--ink)" font-family="Fraunces, Palatino Linotype, serif" font-size="84" font-weight="560">G</text>
+    </symbol>
+
+    <symbol id="logo-seal" viewBox="0 0 580 128">
+      <circle cx="58" cy="64" r="46" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+      <circle cx="58" cy="64" r="39" fill="none" stroke="var(--ink)" stroke-width="0.7"/>
+      <path d="M34 90 V60 Q58 34 82 60 V90" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 90 H84" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="122" y="58" fill="var(--ink)" font-family="Instrument Serif, Palatino Linotype, serif" font-size="40">Gedikpascha</text>
+      <text x="122" y="84" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="12" letter-spacing="2.4">WHOLESALE · RETAIL · SOCIAL</text>
+    </symbol>
+    <symbol id="mark-seal" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="var(--ink)" stroke-width="1.8"/>
+      <circle cx="50" cy="50" r="39" fill="none" stroke="var(--ink)" stroke-width="0.75"/>
+      <path d="M26 74 V46 Q50 22 74 46 V74" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24 74 H76" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="logo-trades" viewBox="0 0 560 120">
+      <circle cx="34" cy="60" r="22" fill="var(--ink)"/>
+      <circle cx="90" cy="60" r="22" fill="none" stroke="var(--red)" stroke-width="2.4"/>
+      <path d="M90 38 A22 22 0 0 0 90 82 Z" fill="var(--red)"/>
+      <circle cx="146" cy="60" r="18" fill="none" stroke="var(--green)" stroke-width="3"/>
+      <circle cx="146" cy="60" r="5" fill="var(--green)"/>
+      <text x="186" y="60" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="38" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+    </symbol>
+    <symbol id="mark-trades" viewBox="0 0 168 88">
+      <circle cx="26" cy="44" r="22" fill="var(--ink)"/>
+      <circle cx="82" cy="44" r="22" fill="none" stroke="var(--red)" stroke-width="2.4"/>
+      <path d="M82 22 A22 22 0 0 0 82 66 Z" fill="var(--red)"/>
+      <circle cx="138" cy="44" r="18" fill="none" stroke="var(--green)" stroke-width="3"/>
+      <circle cx="138" cy="44" r="5" fill="var(--green)"/>
+    </symbol>
+  </svg>
+
+  <div class="wrap">
+    <header class="mast">
+      <div class="mast-brand">
+        <span class="mast-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div>
+          <h1>Gedikpascha</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="board">
+      <section class="col col-logos" id="logos" aria-labelledby="logos-title">
+        <button type="button" class="logos-door" id="openLogos" aria-expanded="false" aria-controls="logos-panel">
+          <span class="logos-door-title" id="logos-title">Logo suggestions</span>
+          <span class="logos-hint">Open all logos</span>
+        </button>
+        <div class="logos-panel" id="logos-panel">
+          <button class="logo-back" type="button" id="closeLogos">Go back</button>
+          <h2 class="logos-panel-title">Logo suggestions</h2>
+        <div class="plates">
+          <article class="plate" data-id="ribbon-g" data-name="Ribbon G">
+            <div class="plate-face">
+              <span class="plate-preview plate-preview--photo">
+                <img class="plate-photo" src="assets/logo-ribbon-g.png" alt="Ribbon G mark in red, green, and blue" width="512" height="512" loading="lazy" decoding="async">
+              </span>
+              <span class="plate-name">Ribbon G</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="segment-g" data-name="Segment G">
+            <div class="plate-face">
+              <span class="plate-preview plate-preview--photo">
+                <img class="plate-photo" src="assets/logo-segment-g.jpg" alt="Segment G mark in navy, orange, and violet" width="1024" height="1024" loading="lazy" decoding="async">
+              </span>
+              <span class="plate-name">Segment G</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="signal" data-origin="client" data-originlabel="Client brief" data-num="01" data-name="Signal" data-symbol="logo-signal" data-mark="mark-signal" data-viewbox="0 0 440 120" data-markbox="0 0 48 96">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 440 120" role="img" aria-label="Signal. Gedikpascha with black, red, and green dots."><use href="#logo-signal" width="440" height="120"></use></svg>
+              </span>
+              <span class="plate-name">Signal</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="ledger" data-origin="client" data-originlabel="Client brief" data-num="02" data-name="Ledger" data-symbol="logo-ledger" data-mark="mark-ledger" data-viewbox="0 0 490 120" data-markbox="0 0 48 100">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 490 120" role="img" aria-label="Ledger. Serif Gedikpascha with dots on a spine."><use href="#logo-ledger" width="490" height="120"></use></svg>
+              </span>
+              <span class="plate-name">Ledger</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="tile" data-origin="client" data-originlabel="Client brief" data-num="03" data-name="Tile" data-symbol="logo-tile" data-mark="mark-tile" data-viewbox="0 0 500 120" data-markbox="0 0 88 88">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 500 120" role="img" aria-label="Tile. Three dots inside a rounded square beside the name."><use href="#logo-tile" width="500" height="120"></use></svg>
+              </span>
+              <span class="plate-name">Tile</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="notch" data-origin="studio" data-originlabel="Studio" data-num="04" data-name="Notch" data-symbol="logo-notch" data-mark="mark-notch" data-viewbox="0 0 520 120" data-markbox="0 0 78 100">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 520 120" role="img" aria-label="Notch. A large serif G beside Gedikpascha."><use href="#logo-notch" width="520" height="120"></use></svg>
+              </span>
+              <span class="plate-name">Notch</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="seal" data-origin="studio" data-originlabel="Studio" data-num="05" data-name="Seal" data-symbol="logo-seal" data-mark="mark-seal" data-viewbox="0 0 580 128" data-markbox="0 0 100 100">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 580 128" role="img" aria-label="Seal. An arch inside a circle beside the name."><use href="#logo-seal" width="580" height="128"></use></svg>
+              </span>
+              <span class="plate-name">Seal</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="trades" data-origin="studio" data-originlabel="Studio" data-num="06" data-name="Trades" data-symbol="logo-trades" data-mark="mark-trades" data-viewbox="0 0 560 120" data-markbox="0 0 168 88">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 560 120" role="img" aria-label="Trades. A full circle, a half circle, and a live ring beside the name."><use href="#logo-trades" width="560" height="120"></use></svg>
+              </span>
+              <span class="plate-name">Trades</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="flow" data-origin="studio" data-originlabel="Studio" data-num="07" data-name="Flow">
+            <div class="plate-face">
+              <span class="plate-preview is-wash">
+                <svg class="logo-svg" viewBox="0 0 560 280" role="img" aria-label="Flow. Gedikpascha in a gradient, on a gradient field.">
+                  <defs>
+                    <linearGradient id="flow-bg" x1="0" y1="0" x2="1" y2="1">
+                      <stop class="flow-bg-a" offset="0%" stop-color="#f6f0e6"/>
+                      <stop class="flow-bg-b" offset="48%" stop-color="#f0b4ae"/>
+                      <stop class="flow-bg-c" offset="100%" stop-color="#b7e0c9"/>
+                    </linearGradient>
+                    <linearGradient id="flow-word" gradientUnits="userSpaceOnUse" x1="86" y1="0" x2="390" y2="0">
+                      <stop class="flow-word-a" offset="0%" stop-color="#141414"/>
+                      <stop class="flow-word-b" offset="48%" stop-color="#d30818"/>
+                      <stop class="flow-word-c" offset="100%" stop-color="#178a45"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="560" height="280" fill="url(#flow-bg)"/>
+                  <circle cx="52" cy="118" r="8" fill="#141414" stroke="#fff8ef" stroke-width="1.8"/>
+                  <circle cx="52" cy="140" r="8" fill="#d30818" stroke="#fff8ef" stroke-width="1.8"/>
+                  <circle cx="52" cy="162" r="8" fill="#178a45" stroke="#fff8ef" stroke-width="1.8"/>
+                  <text x="82" y="149" fill="url(#flow-word)" font-family="Outfit, Segoe UI, sans-serif" font-size="48" font-weight="560">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Flow</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="jewel" data-origin="studio" data-num="08" data-name="Jewel">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 500 120" role="img" aria-label="Jewel. Onyx, garnet, and emerald gradient dots.">
+                  <defs>
+                    <radialGradient id="jewel-onyx" cx="32%" cy="28%" r="75%">
+                      <stop offset="0%" stop-color="#a3988c"/>
+                      <stop offset="48%" stop-color="#3a342e"/>
+                      <stop offset="100%" stop-color="#12100e"/>
+                    </radialGradient>
+                    <radialGradient id="jewel-garnet" cx="32%" cy="28%" r="75%">
+                      <stop offset="0%" stop-color="#f6d2c6"/>
+                      <stop offset="40%" stop-color="#9a3842"/>
+                      <stop offset="100%" stop-color="#4c1a22"/>
+                    </radialGradient>
+                    <radialGradient id="jewel-emerald" cx="32%" cy="28%" r="75%">
+                      <stop offset="0%" stop-color="#f0e2c0"/>
+                      <stop offset="42%" stop-color="#1c6450"/>
+                      <stop offset="100%" stop-color="#0c3228"/>
+                    </radialGradient>
+                    <linearGradient id="jewel-word" gradientUnits="userSpaceOnUse" x1="78" y1="36" x2="470" y2="86">
+                      <stop class="jewel-word-a" offset="0%" stop-color="#3c3228"/>
+                      <stop class="jewel-word-b" offset="48%" stop-color="#b08d5c"/>
+                      <stop class="jewel-word-c" offset="100%" stop-color="#5a4634"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="34" cy="34" r="9" fill="url(#jewel-onyx)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <circle cx="34" cy="60" r="9" fill="url(#jewel-garnet)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <circle cx="34" cy="86" r="9" fill="url(#jewel-emerald)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <text x="62" y="64" fill="url(#jewel-word)" font-family="Fraunces, Palatino Linotype, serif" font-size="40" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Jewel</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="gilt" data-origin="studio" data-num="09" data-name="Gilt">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 500 120" role="img" aria-label="Gilt. Enamel gradient dots and a metal word.">
+                  <defs>
+                    <linearGradient id="gilt-onyx" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#8d847a"/>
+                      <stop offset="100%" stop-color="#1a1714"/>
+                    </linearGradient>
+                    <linearGradient id="gilt-garnet" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#efc2b4"/>
+                      <stop offset="100%" stop-color="#6e2832"/>
+                    </linearGradient>
+                    <linearGradient id="gilt-emerald" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#e4d2a4"/>
+                      <stop offset="100%" stop-color="#143f34"/>
+                    </linearGradient>
+                    <linearGradient id="gilt-word" gradientUnits="userSpaceOnUse" x1="78" y1="40" x2="470" y2="40">
+                      <stop class="gilt-word-a" offset="0%" stop-color="#2e261f"/>
+                      <stop class="gilt-word-b" offset="50%" stop-color="#a8844e"/>
+                      <stop class="gilt-word-c" offset="100%" stop-color="#2e261f"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="34" cy="34" r="9" fill="url(#gilt-onyx)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <circle cx="34" cy="60" r="9" fill="url(#gilt-garnet)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <circle cx="34" cy="86" r="9" fill="url(#gilt-emerald)" stroke="#c6a36a" stroke-width="0.7"/>
+                  <text x="62" y="64" fill="url(#gilt-word)" font-family="Outfit, Segoe UI, sans-serif" font-size="40" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Gilt</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="monogram" data-name="Monogram">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Monogram">
+                  <defs>
+                    <linearGradient id="mono-g" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#e8c98a"/><stop offset="100%" stop-color="#8a6a38"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="8" y="14" width="92" height="92" rx="18" fill="#141414"/>
+                  <text x="54" y="72" text-anchor="middle" fill="url(#mono-g)" font-family="Fraunces, serif" font-size="58" font-weight="560">G</text>
+                  <text x="118" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="36" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Monogram</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="wordmark" data-name="Wordmark">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Wordmark">
+                  <text x="24" y="58" fill="var(--ink)" font-family="Instrument Serif, serif" font-size="44">Gedikpascha</text>
+                  <rect x="24" y="78" width="168" height="3" fill="#b08d5c"/>
+                </svg>
+              </span>
+              <span class="plate-name">Wordmark</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="geometric" data-name="Geometric">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Geometric">
+                  <polygon points="54,18 88,38 88,82 54,102 20,82 20,38" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                  <text x="54" y="66" text-anchor="middle" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="34" font-weight="560">G</text>
+                  <text x="108" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="34" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Geometric</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="circular" data-name="Circular">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Circular">
+                  <circle cx="54" cy="60" r="44" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                  <text x="54" y="56" text-anchor="middle" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="22" font-weight="560">GP</text>
+                  <text x="54" y="76" text-anchor="middle" fill="#6f675e" font-family="Outfit, sans-serif" font-size="9" letter-spacing="1.2">TRADE</text>
+                  <text x="118" y="64" fill="var(--ink)" font-family="Fraunces, serif" font-size="36" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Circular</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="minimal" data-name="Minimal">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Minimal">
+                  <text x="24" y="64" fill="var(--ink)" font-family="Instrument Serif, serif" font-size="42" dominant-baseline="central">Gedikpascha</text>
+                  <circle cx="318" cy="58" r="5" fill="#d30818"/>
+                </svg>
+              </span>
+              <span class="plate-name">Minimal</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="nature" data-name="Nature">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Nature">
+                  <ellipse cx="34" cy="72" rx="14" ry="22" fill="#178a45" transform="rotate(-28 34 72)"/>
+                  <ellipse cx="54" cy="64" rx="14" ry="24" fill="#1a9a52" transform="rotate(8 54 64)"/>
+                  <ellipse cx="74" cy="72" rx="14" ry="22" fill="#0f6b3f" transform="rotate(32 74 72)"/>
+                  <text x="104" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="36" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Nature</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="bold" data-name="Bold">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Bold">
+                  <text x="20" y="68" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="48" font-weight="560" letter-spacing="-0.03em">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Bold</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="crest" data-name="Crest">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Crest">
+                  <defs>
+                    <linearGradient id="crest-g" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#f2d9a6"/><stop offset="100%" stop-color="#9a7340"/>
+                    </linearGradient>
+                  </defs>
+                  <text x="48" y="78" text-anchor="middle" fill="url(#crest-g)" font-family="Fraunces, serif" font-size="72" font-weight="560">G</text>
+                  <path d="M48 22 l4 8 h8 l-6 5 2 8 -8-5 -8 5 2-8 -6-5 h8z" fill="#c6a36a"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Instrument Serif, serif" font-size="38" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Crest</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="abstract" data-name="Abstract">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Abstract">
+                  <circle cx="34" cy="44" r="16" fill="#141414"/>
+                  <circle cx="70" cy="44" r="16" fill="#d30818"/>
+                  <circle cx="34" cy="80" r="16" fill="#178a45"/>
+                  <circle cx="70" cy="80" r="16" fill="none" stroke="#141414" stroke-width="2"/>
+                  <text x="104" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="34" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Abstract</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="void" data-name="Void">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Void">
+                  <path fill="var(--ink)" d="M28 96 C28 52 52 28 88 28 C108 28 120 38 120 54 C120 70 108 78 94 78 C82 78 74 70 74 58 L74 96 Z M74 58 C74 48 80 42 90 42 C100 42 106 48 106 58 C106 68 100 74 90 74 C80 74 74 68 74 58 Z"/>
+                  <text x="136" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="36" font-weight="500" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Void</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="script" data-name="Script">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Script">
+                  <text x="20" y="72" fill="var(--ink)" font-family="Instrument Serif, serif" font-size="52" font-style="italic">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Script</span>
+            </div>
+          </article>
+
+          <article class="plate" data-id="prism" data-name="Prism">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Prism">
+                  <defs>
+                    <linearGradient id="prism-orb" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#5b4fd6"/>
+                      <stop offset="50%" stop-color="#d30818"/>
+                      <stop offset="100%" stop-color="#178a45"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="14" y="28" width="80" height="64" rx="32" fill="url(#prism-orb)"/>
+                  <text x="110" y="64" fill="var(--ink)" font-family="Outfit, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Prism</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-01" data-name="Dots 01">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 01">
+                  <circle cx="44" cy="34" r="7" fill="#d30818"/><circle cx="44" cy="60" r="7" fill="#178a45"/><circle cx="18" cy="60" r="7" fill="#e8a317"/><circle cx="70" cy="60" r="7" fill="#f2c94c"/><circle cx="44" cy="86" r="7" fill="#d30818"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 01</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-02" data-name="Dots 02">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 02">
+                  <circle cx="26" cy="40" r="7" fill="#7b5ea7"/><circle cx="62" cy="40" r="7" fill="#3d3350"/><circle cx="26" cy="80" r="7" fill="#b9a4d6"/><circle cx="62" cy="80" r="7" fill="#6f5b8f"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 02</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-03" data-name="Dots 03">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 03">
+                  <circle cx="44" cy="36" r="7" fill="#178a45"/><circle cx="44" cy="60" r="7" fill="#e8a317"/><circle cx="44" cy="84" r="7" fill="#d30818"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 03</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-04" data-name="Dots 04">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 04">
+                  <circle cx="44" cy="34" r="7" fill="#2f80ed"/><circle cx="44" cy="60" r="7" fill="#178a45"/><circle cx="18" cy="60" r="7" fill="#d30818"/><circle cx="70" cy="60" r="7" fill="#f2c94c"/><circle cx="44" cy="86" r="7" fill="#2f80ed"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 04</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-05" data-name="Dots 05">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 05">
+                  <circle cx="30" cy="44" r="5" fill="#f78da7"/><circle cx="44" cy="36" r="5" fill="#c77dff"/><circle cx="58" cy="44" r="5" fill="#7db3ff"/><circle cx="30" cy="60" r="5" fill="#e8a4ff"/><circle cx="44" cy="52" r="5" fill="#9b6bff"/><circle cx="58" cy="60" r="5" fill="#6aa8ff"/><circle cx="30" cy="76" r="5" fill="#ffb3c7"/><circle cx="44" cy="68" r="5" fill="#b48cff"/><circle cx="58" cy="76" r="5" fill="#89b8ff"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 05</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-06" data-name="Dots 06">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 06">
+                  <circle cx="30" cy="40" r="6" fill="#d30818"/><circle cx="30" cy="60" r="6" fill="#d30818"/><circle cx="30" cy="80" r="6" fill="#d30818"/><circle cx="58" cy="40" r="6" fill="#d30818"/><circle cx="58" cy="60" r="6" fill="#d30818"/><circle cx="58" cy="80" r="6" fill="#d30818"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 06</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-07" data-name="Dots 07">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 07">
+                  <circle cx="22" cy="44" r="6" fill="#178a45"/><circle cx="36" cy="52" r="6" fill="#141414"/><circle cx="50" cy="60" r="6" fill="#178a45"/><circle cx="64" cy="68" r="6" fill="#141414"/><circle cx="78" cy="76" r="6" fill="#178a45"/><circle cx="36" cy="68" r="5" fill="#178a45"/><circle cx="64" cy="52" r="5" fill="#141414"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 07</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-08" data-name="Dots 08">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 08">
+                  <circle cx="38" cy="60" r="22" fill="#d30818" opacity="0.92"/><circle cx="58" cy="60" r="22" fill="#e8a317" opacity="0.92"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 08</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-09" data-name="Dots 09">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 09">
+                  <circle cx="24" cy="40" r="5" fill="#c9b8e8"/><circle cx="44" cy="40" r="5" fill="#c9b8e8"/><circle cx="64" cy="40" r="5" fill="#c9b8e8"/><circle cx="24" cy="60" r="5" fill="#c9b8e8"/><circle cx="44" cy="60" r="5" fill="#c9b8e8"/><circle cx="64" cy="60" r="5" fill="#c9b8e8"/><circle cx="24" cy="80" r="5" fill="#c9b8e8"/><circle cx="44" cy="80" r="5" fill="#c9b8e8"/><circle cx="64" cy="80" r="5" fill="#c9b8e8"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 09</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-10" data-name="Dots 10">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 10">
+                  <circle cx="24" cy="60" r="7" fill="#f2c94c"/><circle cx="44" cy="60" r="7" fill="#f78da7"/><circle cx="64" cy="60" r="7" fill="#178a45"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 10</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-11" data-name="Dots 11">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 11">
+                  <circle cx="24" cy="84" r="9" fill="#1f2a44"/><circle cx="44" cy="60" r="9" fill="#7b5ea7"/><circle cx="64" cy="36" r="9" fill="#f78da7"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 11</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-12" data-name="Dots 12">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 12">
+                  <circle cx="58" cy="34" r="4" fill="#1f2a44"/><circle cx="48" cy="42" r="4" fill="#1f2a44"/><circle cx="40" cy="52" r="4" fill="#1f2a44"/><circle cx="34" cy="64" r="4" fill="#1f2a44"/><circle cx="30" cy="76" r="4" fill="#1f2a44"/><circle cx="30" cy="88" r="4" fill="#1f2a44"/><circle cx="42" cy="88" r="4" fill="#1f2a44"/><circle cx="54" cy="82" r="4" fill="#1f2a44"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 12</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-13" data-name="Dots 13">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 13">
+                  <circle cx="44" cy="34" r="7" fill="#e8a317"/><circle cx="44" cy="60" r="7" fill="#7b5ea7"/><circle cx="18" cy="60" r="7" fill="#178a45"/><circle cx="70" cy="60" r="7" fill="#f2c94c"/><circle cx="44" cy="86" r="7" fill="#e8a317"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 13</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-14" data-name="Dots 14">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 14">
+                  <circle cx="26" cy="42" r="7" fill="#0f4a30"/><circle cx="62" cy="42" r="7" fill="#0f4a30"/><circle cx="26" cy="78" r="7" fill="#0f4a30"/><circle cx="62" cy="78" r="7" fill="#0f4a30"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 14</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-15" data-name="Dots 15">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 15">
+                  <circle cx="24" cy="60" r="7" fill="#1f2a44"/><circle cx="44" cy="60" r="7" fill="#f78da7"/><circle cx="64" cy="60" r="7" fill="#7b5ea7"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 15</span>
+            </div>
+          </article>
+          <article class="plate" data-id="dots-16" data-name="Dots 16">
+            <div class="plate-face">
+              <span class="plate-preview">
+                <svg class="logo-svg" viewBox="0 0 480 120" role="img" aria-label="Dots 16">
+                  <circle cx="44" cy="34" r="7" fill="#e8a317"/><circle cx="44" cy="60" r="7" fill="#e8a317"/><circle cx="18" cy="60" r="7" fill="#e8a317"/><circle cx="70" cy="60" r="7" fill="#e8a317"/><circle cx="44" cy="86" r="7" fill="#e8a317"/>
+                  <text x="96" y="64" fill="var(--ink)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="560" dominant-baseline="central">Gedikpascha</text>
+                </svg>
+              </span>
+              <span class="plate-name">Dots 16</span>
+            </div>
+          </article>
+        </div>
+        <div class="logo-refs">
+          <figure class="logo-ref">
+            <img src="assets/gedikpascha-brand-board.png" alt="Gedikpascha brand board: eleven logo concepts, colors, and fonts" width="1200" height="900" loading="lazy" decoding="async">
+          </figure>
+          <figure class="logo-ref">
+            <img src="assets/chatgpt-logos.png" alt="ChatGPT logo suggestions board" width="1200" height="900" loading="lazy" decoding="async">
+          </figure>
+          <figure class="logo-ref">
+            <img src="assets/dots-reference.jpg" alt="Reference: Dots 01 to 16 logo board" width="1200" height="900" loading="lazy" decoding="async">
+          </figure>
+        </div>
+        </div>
+      </section>
+
+      <section class="col" id="landing" aria-labelledby="landing-title">
+        <div class="col-head">
+          <h2 id="landing-title">Landing page suggestions</h2>
+        </div>
+        <ul class="suggest-list">
+          <li>Home</li>
+          <li>Wholesale</li>
+          <li>Retail</li>
+          <li>Social</li>
+        </ul>
+      </section>
+
+      <section class="col" id="color" aria-labelledby="color-title">
+        <div class="col-head">
+          <h2 id="color-title">Color scheme suggestions</h2>
+        </div>
+        <ul class="swatches">
+          <li>
+            <div class="swatch-row">
+              <span class="swatch" style="background:#141414"></span>
+              <span><b>Black</b><code>#141414</code></span>
+            </div>
+          </li>
+          <li>
+            <div class="swatch-row">
+              <span class="swatch" style="background:#d30818"></span>
+              <span><b>Red</b><code>#D30818</code></span>
+            </div>
+          </li>
+          <li>
+            <div class="swatch-row">
+              <span class="swatch" style="background:#178a45"></span>
+              <span><b>Green</b><code>#178A45</code></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
